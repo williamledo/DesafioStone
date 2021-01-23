@@ -13,8 +13,7 @@ Projeto desenvolvido com base no desafio técnico da Stone. Consiste em criar um
 Pré-requisitos:
 Java 11, Git, IDE Eclipse ou Netbeans
 
-1- Crie uma pasta na área de trabalho, entre na pasta, clique com o botão direito do mouse e selecione "Git Bash Here"
-2- Digite as duas linhas de códigos abaixo
+1- Crie uma pasta na área de trabalho, entre na pasta, clique com o botão direito do mouse e selecione "Git Bash Here" e digite as duas linhas de códigos abaixo
 
 Irá criar um novo repositório
 ```bash
@@ -25,8 +24,8 @@ Irá clonar os arquivos do github para a pasta
 git clone https://github.com/williamledo/TesteStone.git
 ```
 
-3- Abra sua IDE, vá no menu e selecione "File", logo depois em Import, abra a pasta "General", selecione "Existing Projects into Workspace" e clique em "next"
+2- Abra sua IDE, vá no menu e selecione "File", logo depois em Import, abra a pasta "General", selecione "Existing Projects into Workspace" e clique em "next"
 
-4- Na primeira opção "Select root directory: " , clique em "Browse..." e selecione a pasta que você criou no começo do tutorial, apenas selecione ela e clique em "OK", após isso clique em "Finish"
+3- Na primeira opção "Select root directory: " , clique em "Browse..." e selecione a pasta que você criou no começo do tutorial, apenas selecione ela e clique em "OK", após isso clique em "Finish"
 
-5- Depois disso o projeto já foi importado para sua máquina, para testar o programa, procure o projeto java "Desafio Stone", abra o arquivo "Lista" e inicie o programa
+4- Depois disso o projeto já foi importado para sua máquina, para testar o programa, procure o projeto java "Desafio Stone", abra o arquivo "Lista" e inicie o programa
