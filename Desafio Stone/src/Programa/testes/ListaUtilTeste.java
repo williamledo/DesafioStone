@@ -30,8 +30,8 @@ public class ListaUtilTeste {
 		exemplo.put("pedrohenrique@gmail.com", 33);
 		exemplo.put("mariajulia@hotmail.com", 34);
 		
-		Map<String, Integer> resultado = Lista.calcula(itens, emails);
-		Lista.imprimir(resultado, itens);
+		exemplo = Lista.calcula(itens, emails);
+		Lista.imprimir(exemplo, itens);
 		Assert.assertEquals(exemplo, 1);
 		
 		
