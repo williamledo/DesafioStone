@@ -11,7 +11,7 @@ Projeto desenvolvido com base no desafio técnico da Stone. Consiste em criar um
 # Como executar o projeto
 
 Pré-requisitos:
-Java 11, Git, IDE
+Java 11, Git, IDE Eclipse ou Netbeans
 
 1- Crie uma pasta na área de trabalho, entre na pasta, clique com o botão direito do mouse e selecione "Git Bash Here"
 2- Digite as duas linhas de códigos abaixo
