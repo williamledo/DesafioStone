@@ -6,7 +6,7 @@ Projeto desenvolvido com base no desafio técnico da Stone. Consiste em criar um
 
 ## Modelo Conceitual
 
-![Diagrama](https://github.com/williamledo/TesteStone/blob/master/assets/Diagrama%20Projeto%20Stone.png)
+![Diagrama](https://github.com/williamledo/DesafioStone/blob/master/assets/Diagrama%20Projeto%20Stone.png)
 
 # Como executar o projeto
 
