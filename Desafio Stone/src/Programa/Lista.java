@@ -16,15 +16,81 @@ public class Lista {
 		
 		
 		List<Item> itens = new ArrayList();
+		itens = dadosListaItem(itens);
+		
+		System.out.println("\n-----------------------------------------");
+		
 		List<String> emails = new ArrayList();
+		emails = dadosListaEmails(emails); 
 	
+		System.out.println("\n-----------------------------------------");
+				
 		Map<String, Integer> resultado = calcula(itens, emails);
+		
 		imprimir(resultado, itens); // Um método que printa o map se estiver correto
 		//ou printa uma mensagem genérica para qualquer tipo de outro erro
 	
 	}
 	
+	public static List<Item> dadosListaItem(List<Item> itens){
 	
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Quantos itens irá comprar? ");
+		int x = scan.nextInt();
+		System.out.println();
+		
+		if(x == 0) {
+			
+			return null;
+			
+		}else {
+			for(int i = 0; i < x; i++ ) {
+				
+				System.out.print("Digite o nome do item: ");
+				String nome = scan.next();
+				
+				System.out.print("Digite a quantidade do(a) " + nome + ": " );
+				int quantidade = scan.nextInt();
+				
+				System.out.print("Digite o preço do(a) " + nome + ": ");
+				int preco = scan.nextInt();
+				
+				itens.add(new Item(nome, quantidade, preco)); 
+				
+			}
+			
+			return itens;
+			
+		}
+		
+	}
+	
+	public static List<String> dadosListaEmails(List <String> emails){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Quantos emails irá cadastrar ? ");
+		int qtdEmails = scan.nextInt();
+		System.out.println();
+		
+		if (qtdEmails == 0) {
+			
+			return null;
+			
+		}else {
+			
+			for(int i = 1; i<= qtdEmails; i++) {
+				
+				System.out.print("Digite o email " + i +": ");
+				emails.add(scan.next());
+				
+			}
+			
+			return emails;
+		}
+		
+	}
 	
 	public static Map calcula(List<Item> itens, List<String> emails) {
 		
@@ -36,43 +102,9 @@ public class Lista {
 		int restoDivisao = 0;
 		int valorItem;
 		int qtdItem = 0;
-		
-		System.out.print("Quantos itens irá comprar? ");
-		int x = scan.nextInt();
-		System.out.println();
-		
-		for(int i = 0; i < x; i++ ) {
-			
-			System.out.print("Digite o nome do item: ");
-			String nome = scan.next();
-			
-			System.out.print("Digite a quantidade do(a) " + nome + ": " );
-			int quantidade = scan.nextInt();
-			
-			System.out.print("Digite o preço do(a) " + nome + ": ");
-			int preco = scan.nextInt();
-			
-			itens.add(new Item(nome, quantidade, preco)); 
-			
-		}
-		
-		System.out.println("\n-----------------------------------------");
-		
-		System.out.print("Quantos emails irá cadastrar ? ");
-		int qtdEmails = scan.nextInt();
-		System.out.println();
-		
-		for(int i = 1; i<= qtdEmails; i++) {
-			
-			System.out.print("Digite o email " + i +": ");
-			emails.add(scan.next());
-			
-		}
-		
-		System.out.println("\n-----------------------------------------");
-		
-		
-		if(emails.isEmpty()) {  //Verificando se a lista de emails está vazia
+	
+		try {
+			if(emails.isEmpty() || emails == null) {  //Verificando se a lista de emails está vazia
 			
 			return null;
 			
@@ -128,9 +160,14 @@ public class Lista {
 				return null;
 				
 			}
-			
 		}
-	
+			
+		}catch(NullPointerException  o) {
+			
+			mapa = null;
+			return mapa;
+		}
+		
 	}
 	
 	
