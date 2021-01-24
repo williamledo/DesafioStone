@@ -29,3 +29,12 @@ git clone https://github.com/williamledo/TesteStone.git
 3- Na primeira opção "Select root directory: " , clique em "Browse..." e selecione a pasta que você criou no começo do tutorial, apenas selecione ela e clique em "OK", após isso clique em "Finish"
 
 4- Depois disso o projeto já foi importado para sua máquina, para testar o programa, procure o projeto java "Desafio Stone", abra o arquivo "Lista" e inicie o programa
+
+#Testes
+
+O projeto tem uma classe feita para testar a função, para encontrá-la basta ir na pasta do projeto 
+
+```bash
+DesafioStone > src > Programa.testes > ListaUtilTeste.java
+``` 
+Agora é só executar o arquivo e ver o resultado do teste.
