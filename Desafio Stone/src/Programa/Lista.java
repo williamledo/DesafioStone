@@ -1,6 +1,7 @@
 package Programa;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -47,7 +48,7 @@ public class Lista {
 		}else {
 			for(int i = 0; i < x; i++ ) {
 				
-				System.out.print("Digite o nome do item: ");
+				System.out.print("Digite o nome do item " + (i+1) + ": ");
 				String nome = scan.next();
 				
 				System.out.print("Digite a quantidade do(a) " + nome + ": " );
@@ -95,7 +96,7 @@ public class Lista {
 	public static Map calcula(List<Item> itens, List<String> emails) {
 		
 		Scanner scan = new Scanner(System.in);
-		Map<String, Integer> mapa = new TreeMap<>();
+		Map<String, Integer> mapa = new HashMap<>();
 		int valorPorPessoa = 0;
 		int total = 0;
 		int valorTotal = 0;
