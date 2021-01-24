@@ -1,5 +1,7 @@
 # Desafio Stone - William Lêdo da Cunha
 
+## Link do Projeto no GitHub: https://github.com/williamledo/DesafioStone
+
 ## Sobre o projeto
 
 Projeto desenvolvido com base no desafio técnico da Stone. Consiste em criar um programa que irá receber uma lista de compras e uma lista de emails, a lista de compras contém o nome do item, a quantidade e o preço. O programa tem uma função que irá receber as duas listas e calcular com base nos dados da lista e irá dividir o mais igualitariamente possível para a quantidade de pessoas cadastradas da lista de emails, por fim, essa função irá retornar um Map, a chave será o email e o valor será o quanto essa pessoa deverá pagar no final da conta.
