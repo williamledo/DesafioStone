@@ -30,6 +30,10 @@ git clone https://github.com/williamledo/TesteStone.git
 
 4- Depois disso o projeto já foi importado para sua máquina, para testar o programa, procure o projeto java "Desafio Stone", abra o arquivo "Lista" e inicie o programa
 
+```bash
+DesafioStone > src > Programa > Lista.java
+``` 
+
 # Testes
 
 O projeto tem uma classe feita para testar a função, para encontrá-la basta ir na pasta do projeto 
